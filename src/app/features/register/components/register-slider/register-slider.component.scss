@@ -1,0 +1,93 @@
+:host {
+    display: block;
+    .imgs-slider {
+        position: relative;
+        .carousel {
+            .carousel-indicators {
+                right: 32px;
+                left: unset;
+                bottom: 32px;
+                margin: 0;
+                button {
+                    border: 0;
+                    width: 6px;
+                    height: 6px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    opacity: 0.5;
+                    margin: 0 3px;
+                    &.active {
+                        width: 32px;
+                        opacity: 1;
+                    }
+                }
+            }
+            .carousel-inner {
+                .carousel-item {
+                    height: 100vh;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    @media (max-width: 991.98px) {
+                        height: 50vh;
+                    }
+                }
+            }
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 45%;
+            background: transparent linear-gradient(180deg, #6959CB00 0%, #635CA8 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 4px 16px #DDDDE014;
+        }
+
+        /* Start quote */ 
+        .quote {
+            background-color: #fff;
+            border-radius: 16px 16px 57px 16px;
+            padding: 32px 24px;
+            position: absolute;
+            bottom: 62px;
+            right: -62px;
+            width: 368px;
+            &::before {
+                content: url('../../../../../assets/imgs/quote.svg');
+                position: absolute;
+                top: -40px;
+                left: -40px;
+                width: 80px;
+                height: 80px;
+            }
+            p {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+                color: #383838;
+                margin-bottom: 30px;
+                font-weight: 400;
+            }
+            h2 {
+                font-size: 1rem;
+                color: #383838;
+                line-height: 1.5rem;
+                margin-bottom: 0;
+                font-weight: 500;
+            }
+            span {
+                font-size: 0.75rem;
+                color: #3838387e;
+                font-weight: 400;
+            }
+
+            @media (max-width: 991.98px) {
+                max-width: calc(100% - 70px);
+                left: 55px;
+            }
+        }
+        /* End quote */
+    }
+}

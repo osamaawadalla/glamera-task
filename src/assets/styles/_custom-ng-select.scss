@@ -1,0 +1,71 @@
+.form-ng-select {
+    position: relative;
+    margin-bottom: 24px;
+    label {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.75rem;
+        font-weight: 400;
+        color: #454C66;
+        margin-bottom: 8px;
+    }
+    .custom-ng-select {
+        ::ng-deep {
+            .ng-select {
+                .ng-select-container {
+                    border: 1px solid #D0D5DE;
+                    height: auto;
+                    padding: 14px 16px;
+                    border-radius: 4px !important;
+                    .ng-value-container {
+                        padding: 0;
+                        .ng-placeholder {
+                            font-size: 0.75rem;
+                            color: #B7BEC9;
+                        }
+                        .ng-value {
+                            font-size: 0.875rem;
+                            font-weight: 400;
+                            color: #454C66;
+                        }
+                        .ng-input {
+                            top: calc(50% - 12px);
+                            padding-left: 14px;
+                        }
+                    }
+                    .ng-arrow-wrapper {
+                        background-image: url('../imgs/arrow-bottom.svg');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        .ng-arrow {
+                            border: 0;
+                        }
+                    }
+                }
+              
+                // Start select dropdown
+                .ng-dropdown-panel {
+                    border: none;
+                    border-top: 1px solid #D0D5DE;
+                    box-shadow: none;
+                    .ng-dropdown-panel-items {
+                        .ng-option {
+                            font-size: 0.875rem;
+                            color: #454C66;
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+                // End select drop down
+            }
+        }
+    }
+    span.error {
+        position: absolute;
+        right: 0;
+        margin-top: 2px;
+        color: var(--danger);
+        font-size: 0.625rem;
+        display: block;
+    }
+}

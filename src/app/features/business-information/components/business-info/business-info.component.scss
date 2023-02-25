@@ -1,0 +1,41 @@
+:host {
+    display: block;
+    .info {
+        height: 100vh;
+        background-image: url('../../../../../assets/imgs/cover2.jpg');
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: repeat-x;
+        padding: 65px 72px;
+        .logo {
+            margin-bottom: 104px;
+        }
+        h2 {
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.75rem;
+            line-height: 2.313rem;
+            margin-bottom: 24px;
+        }
+        p {
+            color: #fff;
+            opacity: 0.75;
+            font-size: 1rem;
+            line-height: 1.75rem;
+        }
+        @media (max-width: 1399.98px) {
+            padding: 65px 60px;
+        }
+        @media (max-width: 1199.98px) {
+            padding: 65px 25px;
+        }
+        @media (max-width: 991.98px) {
+            height: 50vh;
+        }
+        @media (max-width: 767.98px) {
+            .logo {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

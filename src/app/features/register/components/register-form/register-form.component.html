@@ -1,0 +1,86 @@
+<div class="form-content">
+    <!-- Start form inputs -->
+    <div class="row">
+        <!-- Start fist name input -->
+        <div class="col-sm-6">
+            <div class="form-input">
+                <label>First Name</label>
+                <div class="custom-input">
+                    <input type="text" placeholder="Enter your first name">
+                </div>
+                <!-- <span class="error">Please enter letters only</span> -->
+            </div>
+        </div>
+        <!-- Start fist name input -->
+
+        <!-- Start last name input -->
+        <div class="col-sm-6">
+            <div class="form-input">
+                <label>Last Name</label>
+                <div class="custom-input">
+                    <input type="text" placeholder="Enter your last name">
+                </div>
+            </div>
+        </div>
+        <!-- Start last name input -->
+
+        <!-- Start email input -->
+        <div class="col-sm-6">
+            <div class="form-input">
+                <label>Email Address</label>
+                <div class="custom-input">
+                    <input type="email" placeholder="Enter your email">
+                </div>
+            </div>
+        </div>
+        <!-- Start email input -->
+
+        <!-- Start phone input -->
+        <div class="col-sm-6">
+            <div class="form-input">
+                <label>Phone Number</label>
+                <div class="custom-input group">
+                    <div class="group-text">
+                        <img src="assets/imgs/sa-flag.svg" class="me-1" width="20" height="auto">
+                        <span>+966</span>
+                    </div>
+                    <input type="tel" placeholder="Enter your phone">
+                </div>
+            </div>
+        </div>
+        <!-- Start phone input -->
+
+        <!-- Start password input -->
+        <div class="col-sm-6">
+            <div class="form-input mb-0">
+                <label>Password</label>
+                <div class="custom-input">
+                    <input type="password" placeholder="Enter your Password">
+                    <div class="icon">
+                        <img src="assets/imgs/eye.svg" alt="eye">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start password input -->
+    </div>
+    <!-- End form inputs -->
+
+    <!-- Start form actions -->
+    <div class="actions d-block d-sm-flex flex-wrap justify-content-between align-items-center">
+        <div class="agree d-flex">
+            <mat-checkbox color="primary"></mat-checkbox>
+            <p>
+                Agree to the <a routerLink="/">Privacy Policy</a> and <br class="d-none d-sm-block"> 
+                <a routerLink="/">Terms & Conditions</a>
+            </p>
+        </div>
+        <div class="buttons text-center mt-4 mt-sm-0">
+            <button class="main-button" (click)="openVerifyMobileDialog()">
+                NEXT
+                <img src="assets/imgs/arrow-right.svg" class="ms-5" alt="arrow">
+            </button>
+        </div>
+    </div>
+    <!-- End form actions -->
+</div>

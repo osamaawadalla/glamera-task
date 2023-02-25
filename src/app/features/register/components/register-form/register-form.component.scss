@@ -1,0 +1,22 @@
+/* Start form actions */
+.actions {
+    margin-top: 48px;
+    .agree {
+        mat-checkbox {
+            margin-left: -8px;
+            margin-top: -4px;
+        }
+        p {
+            color: #454C66;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            margin-bottom: 0;
+            font-weight: 400;
+            a {
+                color: #3482F4;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+/* End form actions */

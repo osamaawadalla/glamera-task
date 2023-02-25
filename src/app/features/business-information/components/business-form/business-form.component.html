@@ -1,0 +1,143 @@
+<div class="form-content">
+    <!-- Start form inputs -->
+    <div class="row">
+        <!-- Start business name input -->
+        <div class="col-12">
+            <div class="form-input">
+                <label>Business Name</label>
+                <div class="custom-input">
+                    <input type="text" placeholder="Enter your business name">
+                </div>
+            </div>
+        </div>
+        <!-- End business name input -->
+
+        <!-- Start business name input -->
+        <div class="col-12">
+            <div class="form-checkbox">
+                <label>Business Type</label>
+                <div class="row">
+                    <div class="col-sm-3 col-6">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="salon">
+                            <label class="option" for="salon">
+                                <img src="assets/imgs/type-active.svg" width="32" height="32" class="me-1 active"> 
+                                <img src="assets/imgs/type.svg" width="32" height="32" class="me-1"> 
+                                Salon
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-6">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="Gym">
+                            <label class="option" for="Gym">
+                                <img src="assets/imgs/type-active.svg" width="32" height="32" class="me-1 active"> 
+                                <img src="assets/imgs/type.svg" width="32" height="32" class="me-1"> 
+                                Gym
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-6">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="Spa">
+                            <label class="option" for="Spa">
+                                <img src="assets/imgs/type-active.svg" width="32" height="32" class="me-1 active"> 
+                                <img src="assets/imgs/type.svg" width="32" height="32" class="me-1"> 
+                                Spa
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-6">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="Clinic">
+                            <label class="option" for="Clinic">
+                                <img src="assets/imgs/type-active.svg" width="32" height="32" class="me-1 active"> 
+                                <img src="assets/imgs/type.svg" width="32" height="32" class="me-1"> 
+                                Clinic
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End business name input -->
+
+        <!-- Start governorate input -->
+        <div class="col-sm-6">
+            <div class="form-ng-select">
+                <label>Governorate</label>
+                <div class="custom-ng-select">
+                    <ng-select 
+                        [items]="governorates" 
+                        bindLabel="name" 
+                        bindValue="id"
+                        placeholder="Select Governorate"
+                    >
+                    </ng-select>
+                </div>
+            </div>
+        </div>
+        <!-- End governorate input -->
+
+        <!-- Start district input -->
+        <div class="col-sm-6">
+            <div class="form-ng-select">
+                <label>District</label>
+                <div class="custom-ng-select">
+                    <ng-select 
+                        [items]="districts" 
+                        bindLabel="name" 
+                        bindValue="id"
+                        placeholder="Select district"
+                    >
+                    </ng-select>
+                </div>
+            </div>
+        </div>
+        <!-- End district input -->
+
+        <!-- Start know us input -->
+        <div class="col-sm-6">
+            <div class="form-ng-select">
+                <label>How did you know us?</label>
+                <div class="custom-ng-select">
+                    <ng-select 
+                        [items]="socials" 
+                        bindLabel="name" 
+                        bindValue="id"
+                        placeholder="Select one"
+                    >
+                    </ng-select>
+                </div>
+            </div>
+        </div>
+        <!-- End know us input -->
+
+        <!-- Start using system input -->
+        <div class="col-sm-6">
+            <div class="form-input">
+                <label>Are you currently using system ?</label>
+                <div class="custom-radio pt-2">
+                    <mat-radio-button color="primary" value="yes" name="using_system" class="me-3">Yes</mat-radio-button>
+                    <mat-radio-button color="primary" value="no" name="using_system">No</mat-radio-button>
+                </div>
+            </div>
+        </div>
+        <!-- End using system input -->
+    </div>
+    <!-- End form inputs -->
+
+    <!-- Start form actions -->
+    <div class="actions">
+        <div class="buttons text-center text-sm-end mt-4 mt-sm-0">
+            <button class="main-button" routerLink="/thankyou">
+                CREATE ACCOUNT
+                <img src="assets/imgs/arrow-right.svg" class="ms-1" alt="arrow">
+            </button>
+        </div>
+    </div>
+    <!-- End form actions -->
+</div>

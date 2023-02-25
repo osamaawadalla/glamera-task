@@ -1,0 +1,26 @@
+<div class="verification">
+    <div class="close">
+        <button class="border-0 bg-transparent" (click)="matDialogRef.close()">
+            <img src="assets/imgs/close.svg" width="24" height="24" alt="close">
+        </button>
+    </div>
+
+    <div class="content text-center">
+        <img src="assets/imgs/verify.svg" width="120" height="auto" alt="verify">
+        <h3>Verification Code</h3>
+        <p>
+            Please enter the verification code sent to your phone number ** 34
+        </p>
+
+        <div class="otp">
+            <ng-otp-input [config]="config"></ng-otp-input>
+        </div>
+        
+        <p class="code">The code will be sent again within <span>59</span> seconds</p>
+
+        <div class="buttons">
+            <button class="main-button w-50" (click)="matDialogRef.close(true)">VERIFY</button>
+        </div>
+
+    </div>
+</div>
